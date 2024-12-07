@@ -1,0 +1,96 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://www.postman.com/downloads/ > Install
+https://github.com/ > Signup
+https://github.com/Aakashdeveloper > Follow
+
+//extension
+> Vscode-icons
+> githistory
+> gitlens
+> Code Spell Checker
+> Tabnine
+
+//Prerequest
+HTML
+CSS
+Basic Javascript
+(ifelse,function,loop,array,object,variable)
+
+
+open source
+
+NPM
+> Node Package Manager
+
+
+NPM
+ ||
+ \/
+Nexus Repo
+3,370,501
+
+
+--------------
+JSON
+> JavaScript Object notation
+
+let movieName = "Avengers"
+let movieRating = "4.5"
+let movieType = "Action"
+
+let movieName1 = "Jab We Met"
+let movieRating1 = "4.8"
+let movieType1 = "Romantic"
+
+let movie= {
+    name:"Avengers",
+    rating:"4.5",
+    type:"Action"
+}
+
+let movie = [
+    {
+        "name":"Avengers",
+        "rating":"4.5",
+        "type":"Action"
+    },
+    {
+        "name":"Jab We Met",
+        "rating":4.8,
+        "type":"Romatic"
+    }  
+]
+
+package.json
+> Entry point to the app
+> All the packages install
+> all the command (start,test,build)
+> Meta Data(name,verison,description)
+
+//Step to generate package.json
+** NodeJs must be installed
+> go inside the folder using terminal
+> npm init /npm init -y
+> answer all questions
+> type yes
+
+//step to install package
+> go inside the folder using terminal
+> npm i packageName / npm install packageName
+npm i axios
+
+node_modules> conatins all the packages we have installed
+package-lock.json > Dependency tree
+
+major.minor.patch
+ "^1.7.9" (caret)(minor) 
+ 1.7.19, 1.8.2, 1.9.2,1.7.24 > yes
+ 2.0.0 > no
+
+
+major.minor.patch
+"~1.7.9" (tilde)(patch)
+1.7.19,1.7.24 > yes
+1.9.2,1.8.2,2.0.0 > no
