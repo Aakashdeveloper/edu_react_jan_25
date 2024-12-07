@@ -94,3 +94,8 @@ major.minor.patch
 "~1.7.9" (tilde)(patch)
 1.7.19,1.7.24 > yes
 1.9.2,1.8.2,2.0.0 > no
+
+
+////step to generate react app
+> go inside the folder using terminal
+> npx create-react-app appname
