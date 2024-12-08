@@ -99,3 +99,91 @@ major.minor.patch
 ////step to generate react app
 > go inside the folder using terminal
 > npx create-react-app appname
+
+
+//local dependency
+> Local to the folder
+> can only be used in the same application
+> for each application we to install again
+
+//global dependency
+> Installed in your laptop
+> need admin permission to install
+> only used before app start/generate the app
+
+//window
+(one time)
+> open cmd as administrator
+> npm i -g create-react-app
+> close cmd
+
+(for every app)
+> open cmd
+> go inside the folder where you want app
+> create-react-app aapname
+
+//Mac/linux
+> open terminal
+> sudo npm i -g create-react-app
+> close terminal
+
+(for every app)
+> open terminal
+> go inside the folder where you want app
+> create-react-app appname
+
+// start app
+> npm start
+
+
+react-script> help to complie and run the app
+react-dom > help to display/render content in browser
+react  > main library
+
+
+React
+> Is a Javascript library which help to build single page application (SPA)
+using component based structure
+
+Virtual DOM
+Reconciliation algo
+
+
+
+function add(){
+    let a = [1,2]
+    return a
+}
+
+
+add()
+
+///////////////
+(javascript)
+.map
+.filter
+
+state
+> Act like a local variable
+> Every component will have its own state
+> We can update the state
+> With every State change Component will re-render
+> Any Data interaction will happen through state
+
+props
+> is use to share data between componets
+> we can only share data between nested component
+
+
+class Component 
+> logical
+> all logic api calling,state, handle events
+
+
+functional component
+> dumb component
+> display
+
+
+hooks
+>
