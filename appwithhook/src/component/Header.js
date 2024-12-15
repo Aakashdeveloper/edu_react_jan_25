@@ -12,7 +12,7 @@ const Header = (props) =>{
     //  }
 
     const handleChange = (event) => {
-        setKeyword(event.target.value)
+        setKeyword(event.target.value?event.target.value:"User Input Here")
         props.userText(event.target.value)
     }
 

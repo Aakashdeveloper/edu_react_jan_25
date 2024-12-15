@@ -1,4 +1,4 @@
-import React,{Component,Fragment} from 'react';
+import React,{Fragment,useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ProductDisplay from './ProductDisplay';
@@ -6,37 +6,30 @@ import JSON from './data.json';
 
 
 //JSX >JavaScript Xml
-class App extends Component{
+const App =() => {
 
-    constructor(){
-        super()
+    const [productData] = useState(JSON);
+    const [filteredData,setFilterData] = useState(JSON);
 
-        this.state={
-            productData:JSON,
-            filteredDat:JSON
-        }
-    }
 
-    filterProduct = (keyword) => {
-        let output = this.state.productData.filter((data) => {
+    const filterProduct = (keyword) => {
+        let output = productData.filter((data) => {
             return (
                 data.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1
                 ||  data.description.toLowerCase().indexOf(keyword.toLowerCase()) > -1
             )
         })
-        this.setState({filteredDat:output})
+        setFilterData(output)
     }
 
-    render(){
-        return(
-            <Fragment>
-                <Header userText={(data) => {this.filterProduct(data)}}/>
-                <ProductDisplay products={this.state.filteredDat}/>
-                <Footer year="2025" month="Jan"/>
-            </Fragment>
-            
-        )
-    }
+    return(
+        <Fragment>
+            <Header userText={(data) => {filterProduct(data)}}/>
+            <ProductDisplay products={filteredData}/>
+            <Footer year="2025" month="Jan"/>
+        </Fragment>
+        
+    )
     
 }
 
