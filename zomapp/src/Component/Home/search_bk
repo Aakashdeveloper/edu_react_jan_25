@@ -1,0 +1,46 @@
+import {useState,useEffect} from 'react';
+import './Search.css';
+const Search = () => {
+    const [count,setCount] = useState(0)
+    const [count1,setCount1] = useState(0)
+   
+    const handleCounter = () => {
+        setCount(count+1)
+     }
+
+     const handleCounter1 = () => {
+        setCount1(count1+1)
+     }
+
+
+    useEffect(() => {
+        console.log("inside useEffect")
+    },[count])
+
+    return(
+        <div className="search">
+            <div id="logo">
+                <span>D!</span>
+            </div>
+            <div id="heading">
+                Search Place Near To You
+            </div>
+
+            <div>
+                <h2>{count}</h2>
+                <button onClick={handleCounter}>Counter</button>
+                <h2>{count1}</h2>
+                <button onClick={handleCounter1}>Counter1</button>
+            </div>
+            <div id="dropdown">
+                <select id="city-dropdown">
+                    <option>----SELECT CITY----</option>
+                </select>
+                <select className="restSelect">
+                    <option>----SELECT Restaurants----</option>
+                </select>
+            </div>
+        </div>
+    )
+}
+export default Search
