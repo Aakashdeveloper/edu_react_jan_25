@@ -5,7 +5,7 @@ const Header = () => {
     return(
        <header>
            <div id="brand">
-               Developer Funnel &nbsp;
+               Developer Funnel &nbsp; <Link to="/" className='btn btn-primary'>Home</Link>
            </div>
            <div id="social">
                 <a href="#">
