@@ -20,12 +20,12 @@ const Header = () => {
                     </ul>
                     <ul className='nav navbar-nav navbar-right'>
                         <li>
-                            <Link to="/">
+                            <Link to="/register">
                                 <span className='glyphicon glyphicon-user'></span> SignUp
                             </Link>
                         </li>
                         <li>
-                            <Link to="/login">
+                            <Link to="/">
                                 <span className='glyphicon glyphicon-log-in'></span> LogIn
                             </Link>
                         </li>
