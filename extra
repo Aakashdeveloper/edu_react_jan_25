@@ -316,3 +316,10 @@ json-server --watch data.json --port 9899
 
 # UserInfo (GET) => http://3.17.216.66:5000/api/auth/userinfo
 * (Header) => {'x-access-token':'token value from login'}
+
+
+view  > The part of application and trigger action
+action > all the side effect (api calling)
+reducer > pure function that taje current state and an action asa argument
+and return a new state to store
+store > the store holds the entire state tree of the app
