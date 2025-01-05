@@ -323,3 +323,23 @@ action > all the side effect (api calling)
 reducer > pure function that taje current state and an action asa argument
 and return a new state to store
 store > the store holds the entire state tree of the app
+
+
+
+npm i -g create-react-native-app
+npm install -g expo-cli
+
+create-react-native-app appname
+npm i
+npx expo install react-dom react-native-web @expo/metro-runtime
+npm run web
+
+
+typescript
+npm create vite@latest appname
+appname
+React
+Typescript
+
+cd appname
+npm i
